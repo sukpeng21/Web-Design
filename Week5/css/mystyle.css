@@ -1,0 +1,17 @@
+body {
+    background-color: #FFFAFA;
+    background-image: url("https://i.pinimg.com/474x/7c/97/6c/7c976cdb65d761baced223ccc8980a94.jpg");
+    background-repeat: repeat-x;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #FA8072;
+    font-size: 50px;
+  }
+  
+  div#bodybackground{
+    background-image: url("https://i.pinimg.com/474x/ec/4a/cc/ec4acc1ed8a70c08a2cf31f4ccc23fb8.jpg");
+    background-repeat: repeat-x;
+    text-align: left;
+  }
