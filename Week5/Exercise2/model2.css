@@ -1,0 +1,22 @@
+body{
+    background-color: aliceblue;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+}
+div#firstdiv{
+    background-image: url("../images/firstdiv-bg.jpg");
+    border: 2px solid black;
+    text-align: left;
+    padding:2%;
+    margin:10px;
+    color:black;
+    background-repeat: no-repeat;
+}
+div#secdiv{
+    border: 2px solid black;
+    font-size: 50px;
+    padding:2%;
+    margin:55px 10px 20px 10px;
+    background-image: url("../images/secdiv.jpg");
+    background-repeat: repeat-x;
+    text-align: center;
+}
