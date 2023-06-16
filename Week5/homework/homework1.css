@@ -1,19 +1,22 @@
 body{
-    margin:0%;
-    background-image: url("../homework/homework1.png");
-    background-position: right;
+    margin: 0%;
+    background-image: url(../homework/homework1.png);
+    background-position: 90%;
     background-repeat: no-repeat;
-    
+    background-size: 600px 650px;
 }
 
+div#leftbox{
+    margin: 0px 20px 20px 0px;
+}
 div#left{
     font-family: 'Lato', sans-serif;
-    padding: 5% 10% 5% 3%;
-    border: 4px solid black;
-    margin:10% 10% 10% 0%;
+    padding: 2% 10% 5% 5%;
+    border: 5px solid black;
+    margin: 6% 10% 10% 0%;
     text-align: left;
-    font-size:30px;
-    width: 50%;
+    font-size: 30px;
+    width: 30%;
 }
 p{
     font-family: 'Lato', sans-serif;
