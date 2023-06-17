@@ -1,0 +1,25 @@
+body{
+    margin:0%;
+}
+div#screen{
+    margin:3% 0%;
+    display: flex;
+    /* display:flex 的用途是 - 灵活的方式排列和布局，Flex是Flexible Box的缩写*/
+}
+div#left{
+    width:450px;
+    float: left;
+}
+div#textbox{
+    float: right;
+    /*float: left; 的意思是将元素向左浮动，允许其他元素环绕在其右侧。它常用于创建多列布局、实现图片文字环绕效果等。 */
+    margin: 8% 0% 20% 50%;
+}
+div#text{
+    float: right;
+    border: 6px solid black;
+    text-align: right;
+    padding: 4% 10% 5% 25%;
+    width: 130%;
+    font-size: 20px;
+}
