@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+div#page{
+    margin: 10% 2%;
+    display:flex;
+}
+div#title{
+    float: left;
+    padding: 0% 7%;
+    font-size: 20px;
+    text-align: center;
+}
+div#first{
+    width: 25%;
+    float: left;
+    padding: 0% 4% 0% 0%;
+}
+div#border1{
+    width: 110%;
+    border-bottom: 2px solid white;
+}
+div#second{
+    width: 25%;
+    float: left;
+    margin: 0% 5%;
+}
+div#border2{
+    border-bottom: 2px solid white;
+    width: 110%;
+}
+div#third{
+    width: 25%;
+    float: left;
+    margin: 0% 5%;
+}
+div#border3{
+    border-bottom: 2px solid white;
+    width: 110%;
+}
