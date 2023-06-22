@@ -1,0 +1,86 @@
+body{
+  margin:0%;
+}
+#container {
+    background-color: #e6e4e4;
+    max-width: 1024px;
+    /* max-width = 维持在一个地方 不管你的 screen 有多大 , 
+    width 的话就固定了一个长度 东西会被拉长 */
+    margin: auto;
+    text-align: center;
+    /* 把东西在中间 */
+  }
+  /* 
+  id = 只有他一个人用 , class 的话就重复性使用可以共用的 
+  https://www.flaticon.com/ (icon 网站 )
+  
+  flex:1;
+  平均的分类 
+
+  */
+  .topnav{
+    background-color: #333;
+    padding:14px 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+  }
+  .logo {
+    display: flex;
+    justify-content:flex-end;
+  }
+  /* Navbar links */
+  .topnav div a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 14px 16px;
+  }
+  .leftbar{
+    text-align: center;
+  }
+  .left{
+    display: flex;
+    justify-content:flex-start;
+  }
+  /* Row */
+.row {
+  display: flex;
+}
+
+/* Column */
+.column {
+  width: 33.33%;
+}
+#column{
+  width:33.33%;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .column{
+    width:50%;
+  }
+  #column{
+    width:100%;
+    }
+  }
+
+/* Responsive layout - makes the three */
+@media screen and (max-width: 480px) {
+  .row {
+	flex-direction: column;
+  }
+   .column {
+	width: 100%;
+  }
+}
