@@ -38,7 +38,7 @@ body{
     flex-wrap: wrap;
     margin: 1%;
 }
-#left{
+.leftcontent{
     display: flex;
     flex-wrap: wrap;
     width: 75%;
@@ -53,24 +53,24 @@ body{
     background-color: white;
     padding: 3%;
 }
-#right{
+.rightcontent{
     display: flex;
     flex-wrap: wrap;
     width: 25%;
     padding: 0.5% 0%;
     flex-direction: column;
 }
-#about{
+.about{
     margin: 1%;
     background-color: white;
     padding: 3%;
 }
-#post{
+.post{
     margin: 1%;
     background-color: white;
     padding: 3%;
 }
-#follow{
+.follow{
     margin: 1%;
     background-color: white;
     padding: 3%;
@@ -81,4 +81,38 @@ body{
     padding: 3%;
     text-align: center;
     width:100%;
+}
+@media screen and (max-width: 800px) {
+    .content{
+        flex-wrap: wrap;
+        
+    }
+    .leftcontent{
+        width:100%;
+    }
+    .rightcontent{
+        display: flex;
+        padding: 0.5% 0%;
+        flex-wrap: wrap;
+        width:100%;
+        flex-direction: row;
+    }
+    .about{
+        margin: 1%;
+        background-color: white;
+        padding: 3%;
+        width: 25%;
+    }
+    .post{
+        margin: 1%;
+        background-color: white;
+        padding: 3%;
+        width: 25%;
+    }
+    .follow{
+        margin: 1%;
+        background-color: white;
+        padding: 3%;
+        width: 25%;
+    }
 }
