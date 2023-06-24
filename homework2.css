@@ -1,0 +1,85 @@
+body{
+    background-color: grey;
+    margin:0%;
+    color:black;
+}
+.bar{
+    background-color: #333;
+    padding:14px 16px;
+    display: flex;
+    justify-content:space-between;
+    color:white;
+}
+.leftbar{
+    text-align: center;
+}
+.left{
+    display: flex;
+    justify-content:flex-start;
+    text-align: center;
+    padding: 3% 1%;
+}
+.right{
+    text-align: center;
+    padding: 14px 16px;
+}
+.rightbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#menu{
+    background-color: #333;
+    margin: 2% 0.5%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column-reverse;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Adjust the height as needed */
+    overflow: hidden;
+    padding: 5px 13px;
+  }
+.slide {
+    width: 100%;
+    height: 100%;
+}
+.prev,.next {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
