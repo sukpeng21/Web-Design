@@ -1,0 +1,102 @@
+body{
+    background-color: grey;
+    margin:0%;
+    color:black;
+}
+.bar{
+    display: flex;
+    background-color: black;
+    padding: 2% 2%;
+    justify-content: space-between;
+}
+.leftbar{
+    background-color: black;
+}
+.rightbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#profile{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    width: 6%;
+    flex-direction: row;
+    text-align: right;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container {
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+#centerbotton{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    left: 33%;
+    align-items: center;
+    font-size: 13px;
+}
+#centertext1{
+    padding:0% 5px;
+}
+#centerbotton2{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    right: 0.1%;
+    align-items: center;
+    font-size: 13px;
+}
+#centertext2{
+    padding:0% 5px;
+}
+#leftbotton{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: 13px;
+}
+#buttontext1{
+    padding:0% 5px;
+    color:white;
+}
+#rightbotton{
+    border-style:dotted;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    font-size: 13px;
+    padding:1% 1%;
+}
