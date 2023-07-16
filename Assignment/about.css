@@ -1,0 +1,330 @@
+body{
+    margin:0%;
+}
+.barline{
+    display:flex;
+    padding: 2% 2%;
+    background-color: black;
+    justify-content: space-between;
+}
+#logo{
+    width:20%;
+    padding: 5px 5px;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    font-family: 'Inter:wght@100;600;900', sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+}
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+#title{
+    background-color: #ECECEC;
+    font-style: italic;
+    font-family: 'Inter:wght@100;200;300;500;600;700', sans-serif;
+    font-weight: 850;
+    font-size: 28px;
+    text-align: center;
+    padding: 3.2%;
+}
+#bodycontent{
+    margin: 5% 5% 1% 5%;
+    display: flex;
+}
+.imagetext{
+    padding: 0px 55px;
+    font-family: 'Inter:wght@100;200;300;500;600;700', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+#leftcontent{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+#content1{
+    border-right: 2px solid;
+}
+#dreampart{
+    padding:25px 25px 0 25px;
+}
+#dreamtitle{
+    display: flex;
+    align-items: center;
+}
+#dreampara{
+    padding: 8% 0px;
+    line-height: 1.8;
+    width: 95%;
+    border-bottom: 1px solid;
+    font-size: 17px;
+}
+#content2{
+    border-right: 2px solid;
+    margin: 3% 0 0 0;
+}
+#hobbypart{
+    padding: 25px;
+}
+#hobbytitle{
+    display: flex;
+    align-items: center;
+}
+#hobbypara{
+    padding: 10% 0px;
+    line-height: 1.5;
+    width: 90%;
+    border-bottom: 1px solid;
+    font-size: 17px;
+}
+.blue{
+    color: #103A79;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 0.3;
+}
+.hobbygroup{
+    padding:5px 0px;
+}
+#content3{
+    border-right: 2px solid;
+}
+#activitypart{
+    padding: 25px;
+}
+#activitytitle{
+    display: flex;
+    align-items: center;
+}
+#activitypara{
+    padding: 10% 0px;
+    line-height: 1.5;
+    width: 90%;
+    font-size: 17px;
+}
+.activitygroup{
+    padding: 10px 0px;
+}
+#imagetext{
+    padding: 0px 35px;
+    font-family: 'Inter:wght@100;200;300;500;600;700', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+#profilepart{
+    padding: 0px 6%;
+}
+#profiletitle{
+    display: flex;
+    align-items: center;
+    padding: 0 0 3% 0;
+}
+#profilepara{
+    font-size:18px;
+    width: 110%;
+}
+#inoneline{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    width:100%;
+    font-family: 'Inter', sans-serif;
+}
+#profilegroup1{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.3;
+}
+#profilegroup2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 18%;
+    line-height: 0.3;
+}
+#profilegroup3{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.3;
+}
+#inoneline2{
+    display: flex;
+    border-bottom: 1px solid;
+    padding: 8.5% 0px;
+    width:90%;
+}
+#profilegroup4{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.3;
+}
+#profilegroup5{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 25%;
+}
+.profilegrey{
+    color: #585757;
+    line-height: 0.9;
+}
+.importantcontent{
+    font-weight: 430;
+    font-size: 19px;
+    margin: 0;
+}
+#educationpart{
+    padding: 5% 8%;
+}
+#educationtitle{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+#educationpara{
+    padding: 7% 0px;
+    line-height: 0.5;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 400;
+}
+.edugroup{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.edugrouppara{
+    padding:15px 0px;
+    line-height: 1;
+}
+.edugrey{
+    color:#5C5A5A;
+    font-size:15px;
+}
+.edusubject{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.collage{
+    color:#5C5A5A;
+}
+#footer{
+    background-color: black;
+    padding: 5% 40px;
+    text-align: center;
+}
+.icon a{
+    padding: 0px 20px;
+    color:black;
+}
+#footertex{
+    color: white;
+    padding: 35px 0px 0px 0px;
+}
+
+/*
+#content{
+    margin: 5%;
+}
+
+#dreampart{
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 2px solid;
+    width: 30%;
+    position: absolute;
+    padding: 20px;
+}
+#dreamtitle{
+    display: flex;
+    align-items: center;
+}
+#dreampara{
+    padding: 8% 0px;
+    line-height: 1.5;
+    width: 85%;
+    font-size: 18px;
+    border-bottom: 1px solid;
+}
+#content2{
+    display: flex;
+    position: relative;
+}
+#profilepart{
+    position: absolute;
+    width: 50%;
+    left: 40%;
+}
+#profiletitle{
+    display: flex;
+    align-items: center;
+}
+
+
+#hobbypart{
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 2px solid;
+    width: 30%;
+    position: absolute;
+    padding: 0px 20px;
+    top: 92%;
+    left: 5%;
+}
+#hobbytitle{
+    display: flex;
+    align-items: center;
+    padding: 20% 0px 10px 0;
+}
+#hobbypara{
+    padding: 8% 0px;
+    line-height: 1.5;
+    width: 85%;
+    font-size: 18px;
+    border-bottom: 1px solid;
+}
+
+
+#activitypart{
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 2px solid;
+    width: 30%;
+    position: absolute;
+    padding: 0px 20px;
+    top: 200%;
+    left: 5%;
+}
+#activitytitle{
+    display: flex;
+    align-items: center;
+    padding: 8% 0px 10px 0;
+}
+#activitypara{
+    padding: 8% 0px;
+    line-height: 1.5;
+    width: 85%;
+    font-size: 18px;
+    border-bottom: 1px solid;
+}
+#imagetext{
+    padding:0px 35px; 
+    font-family: 'Inter:wght@100;200;300;500;600;700', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
