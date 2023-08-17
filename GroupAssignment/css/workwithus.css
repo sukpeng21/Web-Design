@@ -1,0 +1,189 @@
+body{
+    margin:0%;
+}
+.barline {
+    display: flex;
+    justify-content: space-between;
+    background-color: #B1454A;
+    align-items: center;
+    position: relative;
+    flex:1;
+}
+#logo {
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+    font-size: 35px;
+    padding: 0 50px;
+    position: sticky;
+    flex: 1;
+}
+#menu {
+    position: sticky;
+    flex: 1;
+}
+.topnav {
+    overflow: hidden;
+    display: flex;
+    background-color: #B1454A;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 4% 0 10% 0;
+    flex-wrap: nowrap;
+    color: white;
+    position: relative;
+}
+.topnav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 10px 20px;
+}
+/* 为汉堡菜单按钮添加白色字体颜色 */
+.navbar-toggler-icon {
+    color: white;
+}
+.bg-body-tertiary{
+    padding:0;
+}
+/* 隐藏子菜单 */
+.subpage {
+    display: none;
+    flex-direction: column; /* 设置子菜单的纵向排列 */
+    background-color: #B1454A; /* 设置子菜单的背景颜色 */
+}
+/* 在点击汉堡菜单后显示子菜单 */
+.show .subpage {
+    display: flex;
+    color: white;
+    line-height: 0.5;
+}
+/* 修改按钮颜色和字体颜色 */
+.btn{
+    background-color: #B1454A;
+    color: white;
+    border-color: white;
+}
+/* 修改搜索框颜色和字体颜色 */
+.form-control {
+    background-color: white; /* 修改搜索框背景颜色 */
+    color: #D6D6D6; /* 修改搜索框字体颜色 */}
+/* 隐藏搜索栏 */
+.search-bar {
+    display: none;
+}
+.d-flex{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 90%;
+}
+#body{
+    margin:5%;
+}
+.contenttitle{
+    width: 30%;
+}
+.black{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+.pink{
+    color:#B1454A;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+#subtitle{
+    width:30%;
+}
+.contenttitlepart{
+    margin:0 3%;
+}
+.form-container {
+    margin: 20px;
+}
+
+.bottom-border-form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px; 
+    
+}
+
+.bottom-border-form input {
+    padding: 8px;
+    margin-bottom: 23px;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.row{
+    text-align: center;
+}
+.contentpart1{
+    display: flex;
+    padding: 80px 0 0 0;
+    flex-wrap: wrap;
+    margin: 0 0 0 150px;
+}
+.contentmaintitle{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding: 0 10% 0 0;
+}
+input#question1{
+    width:100%;
+}
+input#question2{
+    width:100%;
+}
+input#question3{
+    width:100%;
+}
+input#question4{
+    width:100%;
+}
+.button{
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+}
+.buttonstyle a{
+    background-color: #B1454A;
+    color: white;
+    padding: 15px 51px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 28px;
+    position: absolute;
+    right: 250px;
+}
+#footerpart{
+    display: flex;
+    padding: 2% 5%;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+#footerlogo{
+    font-size:30px;
+    color:#B1454A;
+    font-weight: 600;
+    font-family: 'Playfair Display SC', serif;
+}
+#footertext{
+    display: flex;
+    font-size: 20px;
+}
+#footericon a{
+    padding: 0 5px;
+}

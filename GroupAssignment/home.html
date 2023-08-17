@@ -15,20 +15,48 @@
     <title> Group Assignment </title>
 </head>
 <body>
-    <div class="barline">
-        <div id="logo">
-            <p> Koyn </p>
-        </div>
-            <div id="menu">
-                <div class="topnav">
-                    <a href="home.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="myskill.html">SKILLS</a>
-                    <a href="workingexp.html">EXPERIENCES</a>
-                    <a href="contact.html">CONTACT</a>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="barline">
+            <div id="logo">
+                <p> Koyn </p>
             </div>
-    </div>
+                <div id="menu">
+                <nav class="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="topnav">
+                                <a href="home.html">HOME</a>
+                                <a href="about.html">ABOUT</a>
+                                <li class="subpage">
+                                    <a href="about.html">Our Staff</a>
+                                    <a href="about.html">Our Story</a>
+                                </li>
+                                <a href="myskill.html">MENU</a>
+                                <li class="subpage">
+                                    <a href="about.html">Meal</a>
+                                    <a href="about.html">Dessert</a>
+                                    <a href="about.html">Drinks</a>
+                                </li>
+                                <a href="workingexp.html">EVENTS</a>
+                                <li class="subpage">
+                                    <a href="about.html">Live Band</a>
+                                    <a href="about.html">Ladies Night</a>
+                                    <a href="about.html">Specoal Buffet</a>
+                                </li>
+                                <a href="contact.html">CONTACT</a>
+                                <li class="subpage">
+                                    <a href="about.html">Work with us</a>
+                                </li>
+                        </nav>
+                    </div>
+                </div>
+                <form class="search" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+        </div>
+    </nav>
     <div id="body">
         <div id="sec1">
             <div class="leftbody">
@@ -46,7 +74,7 @@
                 </div>
                 <div class="button">
                     <div class="buttonstyle">
-                        <a href="about.html">Get Directions </a>
+                        <a href="contact.html">Get Directions </a>
                     </div>
                 </div>
             </div>
@@ -80,29 +108,34 @@
                 <p> Popular Food / 人気の食べ物 </p>
             </div>
             <div id="sec3part">
-                <div class="bigborder">
-                    <div class="borderimg">
-                        <img class="borderinsideimg" src="../GroupAssignment/img/Chawanmushi.png" alt="Chawanmushi" width="300px" height="250px">
+                <div class="borderpadding">
+                    <div class="bigborder">
+                        <div class="borderimg">
+                            <img class="borderinsideimg" src="../GroupAssignment/img/Chawanmushi.png" alt="Chawanmushi" width="300px" height="250px">
+                        </div>
+                            <div class="foodname">
+                                <p> Chawanmushi </p>
+                            </div>
+                            <div class="price">
+                                <p> RM 15</p>
+                            </div>
                     </div>
-                        <div class="foodname">
-                            <p> Chawanmushi </p>
-                        </div>
-                        <div class="price">
-                            <p> RM 15</p>
-                        </div>
                 </div>
-                <div class="bigborder2">
-                    <div class="borderimg">
-                        <img class="borderinsideimg2" src="../GroupAssignment/img/sushi.png" alt="sushi" width="250px" height="250px">
+                <div class="borderpadding">
+                    <div class="bigborder2">
+                        <div class="borderimg">
+                            <img class="borderinsideimg2" src="../GroupAssignment/img/sushi.png" alt="sushi" width="250px" height="250px">
+                        </div>
+                            <div class="foodname">
+                                <p> Set Sushi </p>
+                            </div>
+                            <div class="price">
+                                <p> RM 50</p>
+                            </div>
                     </div>
-                        <div class="foodname">
-                            <p> Set Sushi </p>
-                        </div>
-                        <div class="price">
-                            <p> RM 50</p>
-                        </div>
                 </div>
-                <div class="bigborder3">
+                <div class="borderpadding">
+                    <div class="bigborder3">
                     <div class="borderimg">
                         <img class="borderinsideimg3" src="../GroupAssignment/img/Gyoza.png" alt="Gyoza" width="265px" height="250px">
                     </div>
@@ -112,7 +145,32 @@
                         <div class="price">
                             <p> RM 10</p>
                         </div>
+                    </div>
                 </div>
+                <div class="sec3button">
+                    <div class="sec3buttonstyle">
+                        <a class="sec3buttonstyle" href="#menu">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerpart">
+            <div id="footerlogo">
+                <p> Koyn </p>
+            </div>
+            <div id="footertext">
+                <p>Koyn © Copyright 2023.</p>
+                <p>All right reserved.  </p>
+            </div>
+            <div id="footericon">
+                <a href="" target="new">
+                    <img src="../GroupAssignment/img/fb.png" alt="fb" width="60px" height="60px">
+                </a>
+                <a href="" target="new">
+                    <img src="../GroupAssignment/img/ig.png" alt="ig" width="60px" height="60px">
+                </a>
             </div>
         </div>
     </div>
