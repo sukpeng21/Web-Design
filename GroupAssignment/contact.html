@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,31 +13,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400&family=Playfair+Display&family=Playfair+Display+SC&family=Plus+Jakarta+Sans&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-    <title> Group Assignment </title>
+    <!-- 引入 Bootstrap 的 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title> Contact Us </title>
 </head>
 <body>
-    <div class="barline">
-        <div id="logo">
-            <p> Koyn </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg p-0 m-0">
+        <div class="container-fluid p-2">
+          <p class="logo"> Koyn</p>
+          <button class="navbar-toggler" data-bs-theme="dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="home" data-bs-toggle="dropdown" aria-expanded="false">
+                  ABOUT
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item text-white" href="#">About Us</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Our Chef</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Our Story</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENUS
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item text-white" href="#">Menus</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Meal</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Beverage</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Dessert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="event.html" data-bs-toggle="dropdown" aria-expanded="false">
+                  EVENT
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item text-white" href="event.html">Events</a></li>
+                  <li><a class="dropdown-item text-white" href="liveband.html">Live Band</a></li>
+                  <li><a class="dropdown-item text-white" href="ladynight.html">LadyLuxe</a></li>
+                  <li><a class="dropdown-item text-white" href="buffet.html">Buffetific</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="contact.html" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  CONTACT
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item text-white" href="contact.html">Contact Us</a></li>
+                  <li><a class="dropdown-item text-white" href="workwithus.html">Join Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-            <div id="menu">
-                <div class="topnav">
-                    <a href="home.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="myskill.html">MENU</a>
-                    <a href="workingexp.html">EVENTS</a>
-                    <a href="contact.html">CONTACT</a>
-                </div>
-            </div>
-    </div>
+      </nav>
     <div id="body">
         <div id="sec1">
             <div id="sec1title">
                 <p class="sec1title">Contact us / お問い合わせください </p>
                 <p class="sec1subtitle"> Need to reach us? Feel free to get in touch! Here are the ways you can contact us... </p>
-            </div>
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.113106198761!2d-0.1506464!3d51.5111409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520b9755f1f%3A0x27b1c04523467b18!2sKOYN!5e0!3m2!1sen!2smy!4v1691915341449!5m2!1sen!2smy" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="googlemap"></iframe>
             </div>
         </div>
         <div id="sec2">
@@ -59,6 +105,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.113106198761!2d-0.1506464!3d51.5111409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520b9755f1f%3A0x27b1c04523467b18!2sKOYN!5e0!3m2!1sen!2smy!4v1691915341449!5m2!1sen!2smy" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="googlemap"></iframe>
             </div>
             <div class="sec2secpart">
                 <div class="sec2line1">
@@ -88,7 +137,7 @@
                         <p> WE ARE </p>
                     </div>
                     <div id="sec3titlepart2">
-                        <img src="../GroupAssignment/img/hiring.png" alt="hiring">
+                        <img class="hiringimg" src="../GroupAssignment/img/hiring.png" alt="hiring">
                         <div id="hiringtext">
                             <p> HIRING!</p>
                         </div>
@@ -96,14 +145,11 @@
                 </div>
                 <div id="sec3body">
                     <div id="sec3img">
-                        <img src="../GroupAssignment/img/contact.png" alt="staff" width="600px" height="613.01px">
+                        <img class="contactimg" src="../GroupAssignment/img/contact.png" alt="staff" width="600px" height="613.01px">
                     </div>
                     <div id="sec3content">
-                        <div id="sec3contenttitle">
-                            <p> Open Position:  </p>
-                        </div>
                             <div id="sec3contenttitlecontent">
-                                <ul>
+                                <ul class="a">
                                     <li>Line Cooks</li>
                                     <li>Waiter/Waitress</li>
                                     <li>Host/Hostess</li>
@@ -112,7 +158,7 @@
                             </div>
                             <div id="botton">
                                 <div id="bottonstyle">
-                                    <a class="sec3buttonstyle" href="#">Ready for Hire!</a>
+                                    <a class="sec3buttonstyle" href="workwithus.html">Ready for Hire!</a>
                                 </div>
                             </div>
                     </div>
@@ -130,11 +176,11 @@
                 <p>All right reserved.  </p>
             </div>
             <div id="footericon">
-                <a href="" target="new">
-                    <img src="../GroupAssignment/img/fb.png" alt="fb" width="60px" height="60px">
+                <a href="https://www.facebook.com/koynlondon?mibextid=ZbWKwL" target="new" class="icona">
+                    <img class="icon" src="../GroupAssignment/img/fb.png" alt="fb" width="50px" height="50px">
                 </a>
-                <a href="" target="new">
-                    <img src="../GroupAssignment/img/ig.png" alt="ig" width="60px" height="60px">
+                <a href="https://www.instagram.com/koynlondon/" target="new" class="icona">
+                    <img  class="icon" src="../GroupAssignment/img/ig.png" alt="ig" width="50px" height="50px">
                 </a>
             </div>
         </div>

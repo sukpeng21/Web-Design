@@ -1,96 +1,164 @@
-body{
-    margin:0%;
-}
-.barline{
-    display: flex;
-    justify-content: space-between;
-    background-color: #B1454A;
-    align-items: center;
-    position: relative;
-    flex:1;
-}
-#logo{
-    font-family: 'Playfair Display SC', serif;
-    color:white;
-    font-size:35px;
-    padding: 0 50px;
-    position: sticky;
-    flex:1;
-}
-#menu{
-    background: #FFF6EB;
-    color: black;
-    padding: 50px;
-    position: sticky;
-    flex:1;
-}
-.subpage{
-    display:none;
-}
-.search{
-    display:none;
+body {
+    margin: 0%;
 }
 
-.topnav {
-    overflow: hidden;
-    display:flex;
-    flex-wrap: wrap;
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        background-color: #B1454A;
+    }
+
+    .dropdown-item {
+        padding: 0 5px;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+        width: 90% !important;
+        background-color: #A03E41;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .dropdown-item:hover {
+        background-color: white !important;
+        /* 悬停时的背景颜色 */
+        color: black !important;
+        /* 悬停时的文本颜色 */
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+        min-width: auto;
+        width: auto;
+        max-width: none;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        padding: 0 35px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        background-color: white !important;
+        /* 悬停时的背景颜色 */
+        color: black !important;
+        /* 悬停时的文本颜色 */
+    }
 }
-.topnav a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    padding: 10px 25px;
+
+.collapse {
+    margin-left: 50px;
 }
-#sec1{
-    display:flex;
+.collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.navbar-nav .dropdown-menu {
+    background-color: #B1454A;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.dropdown-item:hover {
+    background-color: white !important;
+    /* 悬停时的背景颜色 */
+    color: black !important;
+    /* 悬停时的文本颜色 */
+}
+
+.dropdown-item {
+    color: white;
+    /* 文本颜色 */
+}
+
+.logo {
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+    font-size: 35px;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background: linear-gradient(to right,
+            #B1454A 0%,
+            #B1454A 50.05%,
+            #FFEAEE 50.05%,
+            #FFEAEE 100%);
+}
+
+/* ------------------ home ------------*/
+#sec1 {
+    display: flex;
     position: relative;
 }
-.leftbody{
+
+.leftbody {
     display: flex;
     background-color: #B1454A;
     position: sticky;
-    flex:1;
+    flex: 1;
 }
-.leftimg{
-    position:relative;
+
+.leftimg {
+    position: relative;
 }
-.leftimg h2{
+
+.leftimg h2 {
     margin: 0 50px 20px 50px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+
     font-size: 55px;
     color: #fff;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
 }
-.rightbody{
+
+.lefttext {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.rightbody {
     position: sticky;
-    background-color:#FFF6EB;
-    flex:1;
+    background-color: #FFEAEE;
+    flex: 1;
 }
-.sec1title{
+
+.sec1title {
     font-size: 90px;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     padding: 0 100px;
     margin: 80px 0 0 0;
 }
-.sec1subtitle{
+
+.sec1subtitle {
     padding: 0 100px;
-    color:#5B5A5A;
+    color: #5B5A5A;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-.button{
+
+.button {
     position: relative;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
     padding: 5% 0 13% 0;
 }
-.buttonstyle a{
+
+.buttonstyle a {
     background-color: #333333;
-    color:white;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -100,49 +168,61 @@ body{
     position: absolute;
     right: 100px;
 }
+
 /* ----------------- HOME/firstpart ------------------- */
-.redtext{
-    color:#B1454A;
+.redtext {
+    color: #B1454A;
 }
+
 /*----------------- Pink text color ----------------- */
-#sec2{
+#sec2 {
     background-image: url("../img/about-bg.png");
     background-repeat: no-repeat
 }
-#sec2body{
+
+#sec2body {
     display: flex;
     margin: 0 10% 5% 17%;
+    padding: 50px 0 0 0;
 }
-.sec2title{
-    padding:30px 0 20px 0;
+
+.sec2title {
+    padding: 90px 0 20px 0;
 }
-.sec2title p{
+
+.sec2title p {
     font-family: 'Playfair Display SC', serif;
     font-size: 55px;
     text-align: center;
     font-weight: 700;
 }
-.sec2text{
+
+.sec2text {
     font-family: 'Playfair Display', serif;
     padding: 20px 0 20px 100px;
     font-size: 50px;
 }
-.sec2text p{
+
+.sec2text p {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
-#sec2subtitle{
+
+#sec2subtitle {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
-    font-size:19px;
+    font-size: 19px;
 }
-.sec2button{
-   padding:80px 0px;
+
+.sec2button {
+    padding: 80px 0px;
 }
-.sec2buttonstyle{
+
+.sec2buttonstyle {
     font-family: 'Playfair Display', serif;
-    padding:80px 0px;
+    padding: 80px 0px;
 }
+
 .sec2button {
     border: none;
     background-color: transparent;
@@ -150,89 +230,105 @@ body{
     font-size: 23px;
     position: relative;
     text-decoration: none;
-    color:black;
+    color: black;
 }
+
 .sec2button::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px; /* 设置线条的高度 */
-    background-color: #000000; /* 调整线条的颜色 */
+    height: 1px;
+    /* 设置线条的高度 */
+    background-color: #000000;
+    /* 调整线条的颜色 */
     bottom: 0;
     left: 0;
 }
+
 /* ---------------------- about section -------------- */
-#sec3{
+#sec3 {
     background-image: url("../img/popularfood-bg.png");
+    width: 100%;
     background-repeat: no-repeat;
-    width:100%;
-    background-color:#B1454A;
+    background-color: #B1454A;
     background-position: center center;
 }
-.sec3title{
-    padding: 30px 0 0px 0;
+
+.sec3title {
+    padding: 74px 0 30px 0;
 }
-.sec3title p{
+
+.sec3title p {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     text-align: center;
     font-weight: 700;
-    color:white;
+    color: white;
 }
-#sec3part{
+
+#sec3part {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 0 4%;
     justify-content: center;
 }
-.borderpadding{
-    padding:2%;
+
+.borderpadding {
+    padding: 2%;
 }
-.bigborder{
-    padding: 30px;
+
+.bigborder {
+    padding: 37px 25px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 36px;
-    background: rgba(255,255,255,.05);
+    background: rgba(255, 255, 255, .05);
 }
-.bigborder2{
-    padding: 36px 56px;
+
+.bigborder2 {
+    padding: 37px 35px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 36px;
-    background: rgba(255,255,255,.05);
+    background: rgba(255, 255, 255, .05);
 }
-.bigborder3{
-    padding: 37px 52px;
+
+.bigborder3 {
+    padding: 37px 35px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 36px;
-    background: rgba(255,255,255,.05);
+    background: rgba(255, 255, 255, .05);
 }
-.borderimg{
+
+.borderimg {
     display: flex;
     justify-content: center;
 }
-.borderinsideimg{
-    padding:10% 0;
+
+.borderinsideimg {
+    padding: 10% 0;
     background: rgba(227, 227, 227, 0.5);
     border-radius: 36px;
 }
-.borderinsideimg2{
+
+.borderinsideimg2 {
     padding: 10%;
     background: rgba(227, 227, 227, 0.5);
     border-radius: 36px;
 }
-.borderinsideimg3{
+
+.borderinsideimg3 {
     padding: 9%;
     background: rgba(227, 227, 227, 0.5);
     border-radius: 36px;
 }
-.foodname{
+
+.foodname {
     margin-top: 30px;
     font-weight: 400;
     font-size: 30px;
@@ -240,21 +336,28 @@ body{
     color: white;
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.2;
 }
-.price{
-    color:white;
+
+.price {
+    color: white;
     text-align: center;
     font-weight: 400;
     font-size: 24px;
     line-height: 0px;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-.sec3button{
-    padding: 3%;
+
+.sec3button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4%;
 }
-.sec3buttonstyle a{
+
+.sec3buttonstyle a {
     background-color: white;
-    color:#B1454A;
+    color: #B1454A;
     padding: 15px 43px;
     text-align: center;
     text-decoration: none;
@@ -264,25 +367,257 @@ body{
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
+
 /* ---------------------- popular food -------------- */
-#footerpart{
+#footerpart {
     display: flex;
-    padding: 2% 5%;
+    padding: 3% 5% 2%;
     align-items: center;
     justify-content: space-between;
     align-content: center;
     flex-wrap: nowrap;
 }
-#footerlogo{
-    font-size:30px;
-    color:#B1454A;
+
+#footerlogo {
+    font-size: 30px;
+    color: #B1454A;
     font-weight: 600;
     font-family: 'Playfair Display SC', serif;
 }
-#footertext{
+
+#footertext {
     display: flex;
     font-size: 20px;
 }
-#footericon a{
+
+#footericon a {
     padding: 0 5px;
+}
+
+.icona {
+    color: white;
+}
+
+@media only screen and (max-width: 1250px) {
+    .nav-item .nav-link {
+        font-size: 15px !important;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    
+    #navbtn{
+        color: #ffffff !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .sec1title {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .nav-item .nav-link {
+        color: #ffffff !important;
+    }
+    #sec1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-fluid{
+        background-color: #B1454A;
+    }
+
+    #menu {
+        background-color: #B1454A;
+        color: white;
+    }
+
+    .sec1title {
+        font-size: 60px;
+    }
+
+    #sec2body {
+        display: flex;
+        margin: 0 10% 0 17%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec2title p {
+        font-size: 45px;
+    }
+
+    .sec2title {
+        padding: 50px 0 20px 0;
+    }
+
+    .sec2text {
+        padding: 5% 5% 0;
+        font-size: 40px;
+    }
+
+    #sec2subtitle {
+        font-size: 15px;
+    }
+
+    .sec2aboutimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        padding: 5% 0 18% 0;
+    }
+
+    #sec3part {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sec3title p {
+        font-size: 30px;
+        padding: 0 25px;
+    }
+
+    .bigborder {
+        padding: 25px 42px;
+        margin: 20px 0;
+    }
+
+    .bigborder2 {
+        padding: 18px 38px;
+        margin: 20px 0;
+    }
+
+    .bigborder3 {
+        padding: 21px 29px;
+        margin: 20px 0;
+    }
+
+    .borderinsideimg3 {
+        padding: 4%;
+    }
+
+    .sec3button {
+        padding: 10%;
+    }
+
+    #footertext {
+        font-size: 18px;
+    }
+    #sec3 {
+        background-repeat: repeat;
+        background-color: #B1454A;
+    }
+}
+@media only screen and (max-width: 730px){
+    #sec3 {
+        background-repeat: norepeat;
+        background-image: url("../img/popular-bg-mobile.png");
+        background-position: center center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .sec1title {
+        font-size: 40px;
+        padding: 0 50px;
+    }
+
+    .sec1subtitle {
+        font-size: 15px;
+        padding: 0 50px 15px 50px;
+    }
+
+    .leftimg h2 {
+        margin: 0 27px 11px 26px;
+        font-size: 25px;
+    }
+
+    .button {
+        padding: 5% 0 25% 0;
+    }
+
+    .buttonstyle a {
+        position: absolute;
+        right: 39px;
+    }
+
+    .sec2title p {
+        font-size: 30px;
+    }
+
+    .sec2text {
+        font-size: 25px;
+    }
+
+    #sec2subtitle {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .sec2button {
+        font-size: 15px;
+    }
+
+    .sec2buttonstyle {
+        padding: 33px 0px;
+    }
+
+    .sec3title p {
+        font-size: 25px;
+    }
+
+    .foodname {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .borderinsideimg {
+        padding: 0；
+    }
+
+    .borderinsideimg2 {
+        padding: 5%;
+    }
+
+    .borderinsideimg3 {
+
+        padding: 3%;
+    }
+
+    #footerlogo {
+        font-size: 20px;
+    }
+
+    #footertext {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        line-height: 0.1;
+        align-items: center;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #footerpart {
+        padding: 6% 1% 2% 5%;
+    }
+    #sec3 {
+        background-repeat: repeat;
+        background-image: url("../img/popular-bg-mobile.png");
+    }
 }

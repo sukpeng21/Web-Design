@@ -1,87 +1,75 @@
 body{
     margin:0%;
 }
-.barline {
-    display: flex;
-    justify-content: space-between;
-    background-color: #B1454A;
-    align-items: center;
-    position: relative;
-    flex:1;
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ 
+        background-color: #B1454A;
+    }
+    .dropdown-item{
+        padding: 0 5px;
+    }
+	.navbar .nav-item:hover .dropdown-menu{ 
+        display: block;
+        width: 90% !important;
+        background-color: #A03E41;
+        font-size: 15px;
+        text-align: center;
+    }
+    .dropdown-item:hover {
+        background-color: white!important; /* 悬停时的背景颜色 */
+        color: black !important; /* 悬停时的文本颜色 */
+    }
+	.navbar .nav-item .dropdown-menu{ 
+        margin-top:0; 
+        min-width: auto;
+        width: auto;
+        max-width: none;
+    }
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: row;
+        padding: 0 35px;
+    }
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: row;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+	.dropdown-item.active, .dropdown-item:active{
+		background-color: white!important; /* 悬停时的背景颜色 */
+		color: black !important; /* 悬停时的文本颜色 */
+	}
 }
-#logo {
+.collapse{
+    margin-left:50px ;
+}
+.collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.navbar-nav .dropdown-menu{
+	background-color: #B1454A;
+}
+.nav-item{
+    padding: 0 15px;
+}
+.dropdown-item:hover {
+    background-color: white!important; /* 悬停时的背景颜色 */
+    color: black!important; /* 悬停时的文本颜色 */
+}
+.dropdown-item {
+    color: white; /* 文本颜色 */
+}
+.container-fluid{
+    background-color: #B1454A;
+}
+.logo{
     font-family: 'Playfair Display SC', serif;
     color: white;
     font-size: 35px;
-    padding: 0 50px;
-    position: sticky;
-    flex: 1;
+    padding: 10px 50px;
+    margin: 0;
 }
-#menu {
-    position: sticky;
-    flex: 1;
-}
-.topnav {
-    overflow: hidden;
-    display: flex;
-    background-color: #B1454A;
-    flex-direction: row;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 4% 0 10% 0;
-    flex-wrap: nowrap;
-    color: white;
-    position: relative;
-}
-.topnav a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    padding: 10px 20px;
-}
-/* 为汉堡菜单按钮添加白色字体颜色 */
-.navbar-toggler-icon {
-    color: white;
-}
-.bg-body-tertiary{
-    padding:0;
-}
-/* 隐藏子菜单 */
-.subpage {
-    display: none;
-    flex-direction: column; /* 设置子菜单的纵向排列 */
-    background-color: #B1454A; /* 设置子菜单的背景颜色 */
-}
-/* 在点击汉堡菜单后显示子菜单 */
-.show .subpage {
-    display: flex;
-    color: white;
-    line-height: 0.5;
-}
-/* 修改按钮颜色和字体颜色 */
-.btn{
-    background-color: #B1454A;
-    color: white;
-    border-color: white;
-}
-/* 修改搜索框颜色和字体颜色 */
-.form-control {
-    background-color: white; /* 修改搜索框背景颜色 */
-    color: #D6D6D6; /* 修改搜索框字体颜色 */}
-/* 隐藏搜索栏 */
-.search-bar {
-    display: none;
-}
-.d-flex{
-    display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 40px;
-    width: 90%;
-}
+
 #body{
     margin:5%;
 }
@@ -115,44 +103,75 @@ body{
     padding-bottom: 50px; 
     
 }
-
+.bottom-border-form1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px; 
+    
+}
 .bottom-border-form input {
     padding: 8px;
     margin-bottom: 23px;
     border: none;
     border-bottom: 1px solid #999;
 }
-.row{
-    text-align: center;
+.bottom-border-form1 input {
+    padding: 8px;
+    margin-bottom: 23px;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.bodyform{
+    margin: 5% 0 0 15%;
 }
 .contentpart1{
     display: flex;
+    padding: 45px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.contentpart2{
+    display: flex;
     padding: 80px 0 0 0;
     flex-wrap: wrap;
-    margin: 0 0 0 150px;
+    justify-content: space-evenly;
 }
 .contentmaintitle{
     font-size: 35px;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    padding: 0 10% 0 0;
+    position: absolute;
+    left: 35px;
+    bottom: 165px;
 }
 input#question1{
-    width:100%;
+    width:95%;
 }
-input#question2{
-    width:100%;
+label#question2{
+    width: 40%
+}
+#position{
+    padding: 0 0 20px 5px;
 }
 input#question3{
-    width:100%;
+    width: 95%
 }
 input#question4{
-    width:100%;
+    width: 95%
+}
+
+.form1{
+    width:40%;
+}
+.form2{
+    width:40%;
 }
 .button{
     position: relative;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
+    padding: 0 0 50px 0;
 }
 .buttonstyle a{
     background-color: #B1454A;
@@ -186,4 +205,203 @@ input#question4{
 }
 #footericon a{
     padding: 0 5px;
+}
+.icona{
+    color:white;
+}
+@media only screen and (max-width: 1500px){
+    .bodyform {
+        margin: 5% 0 0 5%;
+    }
+    .contenttitle {
+        width: 40%;
+    }
+    .contentpart1 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .form1 {
+        width: 60%;
+    }
+    .form2 {
+        width: 60%;
+    }
+    input#question1{
+        width: 55%;
+    }
+    input#question2{
+        width:60%;
+    }
+    input#question3{
+        width:60%;
+    }
+    input#question4{
+        width:60%;
+    }
+}
+@media only screen and (max-width: 1280px){
+    input#question1{
+        width: 65%;
+    }
+    input#question2{
+        width: 65%;
+    }
+    input#question3{
+        width: 65%;
+    }
+    input#question4{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    input#question1{
+        width:80%;
+    }
+    input#question2{
+        width:80%;
+    }
+    input#question3{
+        width:80%;
+    }
+    input#question4{
+        width:80%;
+    }
+}
+@media only screen and (max-width: 912px){
+    input#question1{
+        width:95%;
+    }
+    input#question2{
+        width:95%;
+    }
+    input#question3{
+        width:95%;
+    }
+    input#question4{
+        width:95%;
+    }
+}
+@media only screen and (max-width: 869px){
+    .black {
+        font-size: 45px;
+    }
+    .pink {
+        font-size: 45px;
+    }
+    #subtitle {
+        width: 50%;
+        font-size: 10px;
+    }
+    .contenttitle {
+        width: 50%;
+    }
+    .contentpart1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contentmaintitle {
+        font-size: 25px;
+        font-weight: 600;
+        position: inherit;
+        left: 20px;
+        bottom: 0;
+    }
+    .form1 {
+        width: 100%;
+    }
+    .form2 {
+        width: 100%;
+    }
+    .bottom-border-form1 {
+        width: 100%;
+    }
+    .form-container {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    input#name{
+        width:100%;
+    }
+    input#lastname{
+        width:100%;
+    }
+    input#email{
+        width:100%;
+    }
+    input#phone{
+        width:100%;
+    }
+    input#question1{
+        width:100%;
+    }
+    input#question2{
+        width:100%;
+    }
+    input#question3{
+        width:100%;
+    }
+    input#question4{
+        width:100%;
+    }
+    .form2 {
+        width: 90%;
+    }
+
+    .bottom-border-form1 {
+        width: 65%;
+    }
+    .button {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 0 25px 0;
+    }
+    .buttonstyle a{
+        position: inherit;
+        right: 0px;
+        padding: 10px 42px;
+        font-size: 15px;
+    }
+    .bottom-border-form{
+        width: 100%;
+    }
+    .bottom-border-form1{
+        width: 100%;
+    }
+    #footerlogo{
+        font-size:20px;
+    }
+    #footertext{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        line-height: 0.1;
+        align-items: center;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    #footerpart{
+        padding: 6% 1% 2% 5%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .contenttitle {
+        width: 60%;
+    }
+    #position{
+        line-height: 2.5;
+    }
+    select {
+        word-wrap: normal;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 420px){
+    .contenttitle {
+        width: 100%;
+    }
 }
